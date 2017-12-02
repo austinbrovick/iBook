@@ -54,6 +54,7 @@
 		3CEC5ED81FD30CE100DCFFF8 /* iBook */ = {
 			isa = PBXGroup;
 			children = (
+				3CEC5EE51FD30CE100DCFFF8 /* Info.plist */,
 				3CEC5EEE1FD30E0C00DCFFF8 /* Other */,
 				3CEC5EED1FD30DFB00DCFFF8 /* Controller */,
 				3CEC5EEC1FD30DF000DCFFF8 /* View */,
@@ -88,7 +89,6 @@
 		3CEC5EEE1FD30E0C00DCFFF8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3CEC5EE51FD30CE100DCFFF8 /* Info.plist */,
 				3CEC5EE21FD30CE100DCFFF8 /* LaunchScreen.storyboard */,
 				3CEC5EE01FD30CE100DCFFF8 /* Assets.xcassets */,
 				3CEC5ED91FD30CE100DCFFF8 /* AppDelegate.swift */,
