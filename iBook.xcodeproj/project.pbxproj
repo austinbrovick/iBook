@@ -12,6 +12,7 @@
 		3CEC5EDF1FD30CE100DCFFF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEC5EDD1FD30CE100DCFFF8 /* Main.storyboard */; };
 		3CEC5EE11FD30CE100DCFFF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEC5EE01FD30CE100DCFFF8 /* Assets.xcassets */; };
 		3CEC5EE41FD30CE100DCFFF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEC5EE21FD30CE100DCFFF8 /* LaunchScreen.storyboard */; };
+		9D959F491FD320960003C4F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D959F481FD320960003C4F0 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3CEC5EE01FD30CE100DCFFF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CEC5EE31FD30CE100DCFFF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CEC5EE51FD30CE100DCFFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D959F481FD320960003C4F0 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,11 @@
 		3CEC5ED81FD30CE100DCFFF8 /* iBook */ = {
 			isa = PBXGroup;
 			children = (
+				9D959F471FD320320003C4F0 /* Util */,
+				3CEC5EE51FD30CE100DCFFF8 /* Info.plist */,
+				3CEC5EE21FD30CE100DCFFF8 /* LaunchScreen.storyboard */,
+				3CEC5EE01FD30CE100DCFFF8 /* Assets.xcassets */,
+				3CEC5ED91FD30CE100DCFFF8 /* AppDelegate.swift */,
 				3CEC5EEE1FD30E0C00DCFFF8 /* Other */,
 				3CEC5EED1FD30DFB00DCFFF8 /* Controller */,
 				3CEC5EEC1FD30DF000DCFFF8 /* View */,
@@ -88,12 +95,16 @@
 		3CEC5EEE1FD30E0C00DCFFF8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3CEC5EE51FD30CE100DCFFF8 /* Info.plist */,
-				3CEC5EE21FD30CE100DCFFF8 /* LaunchScreen.storyboard */,
-				3CEC5EE01FD30CE100DCFFF8 /* Assets.xcassets */,
-				3CEC5ED91FD30CE100DCFFF8 /* AppDelegate.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		9D959F471FD320320003C4F0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9D959F481FD320960003C4F0 /* Reachability.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			files = (
 				3CEC5EDC1FD30CE100DCFFF8 /* ViewController.swift in Sources */,
 				3CEC5EDA1FD30CE100DCFFF8 /* AppDelegate.swift in Sources */,
+				9D959F491FD320960003C4F0 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
