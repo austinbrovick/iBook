@@ -12,6 +12,12 @@
 		3CEC5EDF1FD30CE100DCFFF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEC5EDD1FD30CE100DCFFF8 /* Main.storyboard */; };
 		3CEC5EE11FD30CE100DCFFF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEC5EE01FD30CE100DCFFF8 /* Assets.xcassets */; };
 		3CEC5EE41FD30CE100DCFFF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEC5EE21FD30CE100DCFFF8 /* LaunchScreen.storyboard */; };
+		3CEC5EF01FD31AF600DCFFF8 /* MyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EEF1FD31AF600DCFFF8 /* MyBooksViewController.swift */; };
+		3CEC5EF21FD31B9300DCFFF8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EF11FD31B9300DCFFF8 /* SettingsViewController.swift */; };
+		3CEC5EF41FD31BD500DCFFF8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EF31FD31BD500DCFFF8 /* SearchViewController.swift */; };
+		3CEC5EF61FD31BED00DCFFF8 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EF51FD31BED00DCFFF8 /* ChallengesViewController.swift */; };
+		3CEC5EF81FD31C1000DCFFF8 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EF71FD31C1000DCFFF8 /* BookDetailViewController.swift */; };
+		3CEC5EFA1FD31C3300DCFFF8 /* BookContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EF91FD31C3300DCFFF8 /* BookContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		3CEC5EE01FD30CE100DCFFF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CEC5EE31FD30CE100DCFFF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CEC5EE51FD30CE100DCFFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEC5EEF1FD31AF600DCFFF8 /* MyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksViewController.swift; sourceTree = "<group>"; };
+		3CEC5EF11FD31B9300DCFFF8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3CEC5EF31FD31BD500DCFFF8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3CEC5EF51FD31BED00DCFFF8 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		3CEC5EF71FD31C1000DCFFF8 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		3CEC5EF91FD31C3300DCFFF8 /* BookContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		3CEC5ED81FD30CE100DCFFF8 /* iBook */ = {
 			isa = PBXGroup;
 			children = (
+				3CEC5EE51FD30CE100DCFFF8 /* Info.plist */,
 				3CEC5EEE1FD30E0C00DCFFF8 /* Other */,
 				3CEC5EED1FD30DFB00DCFFF8 /* Controller */,
 				3CEC5EEC1FD30DF000DCFFF8 /* View */,
@@ -81,6 +94,12 @@
 			isa = PBXGroup;
 			children = (
 				3CEC5EDB1FD30CE100DCFFF8 /* ViewController.swift */,
+				3CEC5EEF1FD31AF600DCFFF8 /* MyBooksViewController.swift */,
+				3CEC5EF11FD31B9300DCFFF8 /* SettingsViewController.swift */,
+				3CEC5EF31FD31BD500DCFFF8 /* SearchViewController.swift */,
+				3CEC5EF51FD31BED00DCFFF8 /* ChallengesViewController.swift */,
+				3CEC5EF71FD31C1000DCFFF8 /* BookDetailViewController.swift */,
+				3CEC5EF91FD31C3300DCFFF8 /* BookContentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -88,7 +107,6 @@
 		3CEC5EEE1FD30E0C00DCFFF8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3CEC5EE51FD30CE100DCFFF8 /* Info.plist */,
 				3CEC5EE21FD30CE100DCFFF8 /* LaunchScreen.storyboard */,
 				3CEC5EE01FD30CE100DCFFF8 /* Assets.xcassets */,
 				3CEC5ED91FD30CE100DCFFF8 /* AppDelegate.swift */,
@@ -168,8 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CEC5EF41FD31BD500DCFFF8 /* SearchViewController.swift in Sources */,
+				3CEC5EF01FD31AF600DCFFF8 /* MyBooksViewController.swift in Sources */,
 				3CEC5EDC1FD30CE100DCFFF8 /* ViewController.swift in Sources */,
 				3CEC5EDA1FD30CE100DCFFF8 /* AppDelegate.swift in Sources */,
+				3CEC5EF81FD31C1000DCFFF8 /* BookDetailViewController.swift in Sources */,
+				3CEC5EF61FD31BED00DCFFF8 /* ChallengesViewController.swift in Sources */,
+				3CEC5EF21FD31B9300DCFFF8 /* SettingsViewController.swift in Sources */,
+				3CEC5EFA1FD31C3300DCFFF8 /* BookContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
