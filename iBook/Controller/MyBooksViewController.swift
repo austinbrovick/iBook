@@ -13,7 +13,13 @@ class MyBooksViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var myBooks: [[Any]]?
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // TODO: load my books
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // return myBooks.count
         return 5
     }
     
@@ -34,7 +40,18 @@ class MyBooksViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "bookDetail") {
             let bookDetailVC = segue.destination as! BookDetailViewController
-            //...
+/*
+             TODO: bookDetailVC params
+             
+             bookDetailVC.book = book object
+             
+            bookDetailVC.title = "title"
+            bookDetailVC.author = "author"
+            bookDetailVC.date = "date"
+            bookDetailVC.cover = "cover"
+            bookDetailVC.language = "language"
+             bookDetailVC.summary = "summary"
+*/
         }
     }
 }
