@@ -11,25 +11,38 @@ import UIKit
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var bookFileType: UITextField!
+    @IBOutlet weak var mobileNetworkSwitch: UISwitch!
+    
+    var mobileNetwork = false
     
     let fileTypes = ["html", "kindle", "epub", "pdf"]
     
+    var selectedType: String = ""
     var pickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO: set to selected type
+        selectedType = "default"
         
         pickerView.delegate = self
         pickerView.dataSource = self
         
         bookFileType.inputView = pickerView
         bookFileType.textAlignment = .center
+        bookFileType.text = selectedType
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func switchChanged(_ sender: UISwitch) {
+        mobileNetwork = sender.isOn
+    }
+    
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -44,9 +57,13 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedType = fileTypes[row]
+        
         bookFileType.text = fileTypes[row]
         bookFileType.resignFirstResponder()
     }
+    
+    
     /*
     // MARK: - Navigation
 
