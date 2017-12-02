@@ -24,7 +24,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         bookFileType.inputView = pickerView
         bookFileType.textAlignment = .center
-        bookFileType.placeholder = "Select type"
     }
 
     override func didReceiveMemoryWarning() {
