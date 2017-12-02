@@ -14,17 +14,25 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var mobileNetworkSwitch: UISwitch!
     
     var mobileNetwork = false
-    
-    let fileTypes = ["html", "kindle", "epub", "pdf"]
-    
     var selectedType: String = ""
+
+    let fileTypes = ["html", "kindle", "epub", "pdf"]
+    let defaults = UserDefaults.standard
+    
     var pickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // TODO: set to selected type
-        selectedType = "default"
+        selectedType = defaults.string(forKey: "bookFileType") ?? ""
+        if selectedType == "" {
+            selectedType = "epub"
+            defaults.set("epub", forKey: "bookFileType")
+            defaults.set(false, forKey: "mobileNetworkDownload")
+        }
+        
+        mobileNetwork = defaults.bool(forKey: "mobileNetworkDownload")
+        mobileNetworkSwitch.isOn = mobileNetwork
         
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -41,6 +49,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBAction func switchChanged(_ sender: UISwitch) {
         mobileNetwork = sender.isOn
+        defaults.set(sender.isOn, forKey: "mobileNetworkDownload")
     }
     
     
@@ -58,7 +67,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedType = fileTypes[row]
-        
+        defaults.set(fileTypes[row], forKey: "bookFileType")
+
         bookFileType.text = fileTypes[row]
         bookFileType.resignFirstResponder()
     }
