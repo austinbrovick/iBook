@@ -18,6 +18,7 @@
 		3CEC5EF61FD31BED00DCFFF8 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EF51FD31BED00DCFFF8 /* ChallengesViewController.swift */; };
 		3CEC5EF81FD31C1000DCFFF8 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EF71FD31C1000DCFFF8 /* BookDetailViewController.swift */; };
 		3CEC5EFA1FD31C3300DCFFF8 /* BookContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EF91FD31C3300DCFFF8 /* BookContentViewController.swift */; };
+		3CEC5EFE1FD31DD800DCFFF8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC5EFD1FD31DD800DCFFF8 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3CEC5EF51FD31BED00DCFFF8 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		3CEC5EF71FD31C1000DCFFF8 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		3CEC5EF91FD31C3300DCFFF8 /* BookContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContentViewController.swift; sourceTree = "<group>"; };
+		3CEC5EFD1FD31DD800DCFFF8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		3CEC5EEB1FD30DE800DCFFF8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3CEC5EFD1FD31DD800DCFFF8 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				3CEC5EDC1FD30CE100DCFFF8 /* ViewController.swift in Sources */,
 				3CEC5EDA1FD30CE100DCFFF8 /* AppDelegate.swift in Sources */,
 				3CEC5EF81FD31C1000DCFFF8 /* BookDetailViewController.swift in Sources */,
+				3CEC5EFE1FD31DD800DCFFF8 /* Book.swift in Sources */,
 				3CEC5EF61FD31BED00DCFFF8 /* ChallengesViewController.swift in Sources */,
 				3CEC5EF21FD31B9300DCFFF8 /* SettingsViewController.swift in Sources */,
 				3CEC5EFA1FD31C3300DCFFF8 /* BookContentViewController.swift in Sources */,
