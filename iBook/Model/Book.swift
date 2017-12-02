@@ -9,8 +9,7 @@
 import Foundation
 
 
-class Pokemon {
-    
+class Book {
     private var title: String
     
     init (title: String) {
